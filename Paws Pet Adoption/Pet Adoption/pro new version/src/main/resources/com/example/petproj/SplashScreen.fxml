@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.petproj.LoginController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@../../../images/gradient.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="98.0" layoutX="251.0" layoutY="119.0" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/petcareIcon.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="l1" alignment="CENTER" layoutY="226.0" prefHeight="74.0" prefWidth="600.0" text="Paws">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.6604938507080078" blue="0.8698559403419495" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.6000000238418579" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="System Bold" size="51.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

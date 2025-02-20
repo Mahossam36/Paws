@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(from 0% 100% to 100% 0%, #89caff 20%, #bbebff 80%);" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.petproj.PetController">
+   <children>
+      <Ellipse fill="#fab2dd" layoutX="613.0" layoutY="169.0" radiusX="44.0" radiusY="28.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <ImageView fx:id="imageView" fitHeight="203.0" fitWidth="170.0" layoutX="431.0" layoutY="225.0" pickOnBounds="true">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <image>
+            <Image url="@../../../images/catsdogs1.png" />
+         </image>
+      </ImageView>
+      <Ellipse fill="#fab2dd" layoutX="33.0" layoutY="386.0" radiusX="100.0" radiusY="80.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <TextField fx:id="PetName" layoutX="35.0" layoutY="246.0" prefHeight="22.0" prefWidth="186.0" promptText="Pet Name">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="PetBreed" layoutX="35.0" layoutY="285.0" prefHeight="22.0" prefWidth="185.0" promptText="Breed">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="PetAge" layoutX="247.0" layoutY="246.0" prefHeight="22.0" prefWidth="185.0" promptText="Age">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="PetHealth" layoutX="247.0" layoutY="285.0" prefHeight="22.0" prefWidth="185.0" promptText="Health Status">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Button fx:id="submit" alignment="CENTER" cancelButton="true" contentDisplay="CENTER" defaultButton="true" layoutX="34.0" layoutY="356.0" onAction="#submit" prefHeight="29.0" prefWidth="395.0" style="-fx-background-color: white;" text="Submit" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color opacity="0.20000000298023224" />
+               </color>
+            </InnerShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label ellipsisString="" layoutX="260.0" layoutY="151.0" text="Add Pet" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="PetType" layoutX="35.0" layoutY="210.0" prefHeight="25.0" prefWidth="185.0" promptText="Select Type">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <Button fx:id="back" layoutX="35.0" layoutY="156.0" mnemonicParsing="false" onAction="#Back" text="Back" />
+      <AnchorPane prefHeight="123.0" prefWidth="600.0" style="-fx-background-color: white;" />
+      <ImageView fitHeight="143.0" fitWidth="600.0" layoutY="-9.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../images/shelter'slogoimage.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

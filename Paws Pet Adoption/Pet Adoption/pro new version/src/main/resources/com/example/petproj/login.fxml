@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to right, #fab2dd 40%, #bbebff 60%);" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.petproj.LoginController">
+   <children>
+      <AnchorPane prefHeight="123.0" prefWidth="600.0" style="-fx-background-color: white;" />
+      <ImageView fitHeight="143.0" fitWidth="600.0" layoutY="-9.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../images/shelter'slogoimage.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="userusername" layoutX="376.0" layoutY="225.0" prefHeight="27.0" prefWidth="169.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 2px 0px;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <tooltip>
+            <Tooltip contentDisplay="RIGHT" text="Username" textAlignment="CENTER" />
+         </tooltip>
+      </TextField>
+      <PasswordField fx:id="userpassword" layoutX="376.0" layoutY="259.0" prefHeight="27.0" prefWidth="169.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #000000; -fx-border-width: 0px 0px 2px 0px;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <tooltip>
+            <Tooltip text="Password" />
+         </tooltip>
+      </PasswordField>
+      <Button layoutX="376.0" layoutY="297.0" mnemonicParsing="false" onAction="#userlogin" prefHeight="25.0" prefWidth="169.0" style="-fx-background-color: #000000;" text="Login" textAlignment="CENTER" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="376.0" layoutY="375.0" mnemonicParsing="false" onAction="#sginin" prefHeight="25.0" prefWidth="169.0" style="-fx-background-color: black;" text="Sign up" textAlignment="CENTER" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="376.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account ?" textAlignment="CENTER" wrappingWidth="169.33333333333337" />
+      <ImageView fitHeight="25.0" fitWidth="17.0" layoutX="352.0" layoutY="236.0" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/loginblack.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="352.0" layoutY="268.0" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/passwordblack.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="376.0" layoutY="144.0" prefHeight="34.0" prefWidth="169.0" text="Adopter Login">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="adminusername" layoutX="76.0" layoutY="225.0" prefHeight="27.0" prefWidth="169.0" promptText="Username" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <tooltip>
+            <Tooltip text="Username" />
+         </tooltip>
+      </TextField>
+      <PasswordField fx:id="adminpassword" layoutX="76.0" layoutY="259.0" prefHeight="27.0" prefWidth="169.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: white; -fx-border-width: 0px 0px 2px 0px;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <tooltip>
+            <Tooltip text="Password" />
+         </tooltip>
+      </PasswordField>
+      <Button layoutX="76.0" layoutY="297.0" mnemonicParsing="false" onAction="#adminlogin" prefHeight="25.0" prefWidth="169.0" style="-fx-background-color: white;" text="Login" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="76.0" layoutY="375.0" mnemonicParsing="false" onAction="#sginin" prefHeight="25.0" prefWidth="169.0" style="-fx-background-color: white;" text="Sign up" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="76.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account ?" textAlignment="CENTER" wrappingWidth="169.33333333333337" />
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="52.0" layoutY="236.0" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/loginwhite.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="52.0" layoutY="268.0" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/passwordwhite.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="76.0" layoutY="144.0" prefHeight="34.0" prefWidth="169.0" text="Admin Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.petproj.DeleteShelterInfo">
+   <children>
+      <AnchorPane layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(from 0% 100% to 100% 0%, #89caff 20%, #bbebff 80%);">
+         <children>
+            <Ellipse fill="#00096b" layoutX="-9.0" layoutY="407.0" radiusX="100.0" radiusY="80.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Text layoutX="17.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deleting shelter's info">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Label fx:id="Email" layoutX="107.0" layoutY="243.0" text="Email" textFill="#00096b">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="delemailField" editable="false" layoutX="56.0" layoutY="281.0" style="-fx-background-color: white;" />
+            <TextField fx:id="dellocationField" editable="false" layoutX="226.0" layoutY="281.0" style="-fx-background-color: white;" />
+            <TextField fx:id="delphoneField" editable="false" layoutX="397.0" layoutY="281.0" style="-fx-background-color: white;" />
+            <Button fx:id="back" layoutX="17.0" layoutY="376.0" mnemonicParsing="false" onAction="#Back" style="-fx-background-color: white;" text="Back">
+               <cursor>
+                  <Cursor fx:constant="MOVE" />
+               </cursor></Button>
+            <Button fx:id="deleteButton" alignment="CENTER" cancelButton="true" contentDisplay="CENTER" defaultButton="true" layoutX="134.0" layoutY="368.0" onAction="#handleDelete" prefHeight="30.0" prefWidth="362.0" style="-fx-background-color: white;" text="Delete" textAlignment="CENTER" textFill="#00096b">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color opacity="0.507614254951477" />
+                     </color>
+                  </InnerShadow>
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="MOVE" />
+               </cursor>
+            </Button>
+            <Label layoutX="108.0" layoutY="194.0" />
+            <Label fx:id="Location" layoutX="270.0" layoutY="244.0" text="Location" textFill="#00096b">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="Phone" layoutX="442.0" layoutY="245.0" text="Phone" textFill="#00096b">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="fieldComboBox" layoutX="220.0" layoutY="183.0" prefHeight="26.0" prefWidth="161.0" promptText="Select Field to delete" style="-fx-background-color: white;">
+               <cursor>
+                  <Cursor fx:constant="MOVE" />
+               </cursor></ComboBox>
+            <ImageView fitHeight="109.0" fitWidth="85.0" layoutX="132.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/cat2.png" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="123.0" prefWidth="600.0" style="-fx-background-color: white;" />
+            <ImageView fitHeight="143.0" fitWidth="600.0" layoutY="-9.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../images/shelter'slogoimage.png" />
+               </image>
+            </ImageView>
+            <Ellipse fill="#00096b" layoutX="600.0" layoutY="147.0" radiusX="44.0" radiusY="28.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

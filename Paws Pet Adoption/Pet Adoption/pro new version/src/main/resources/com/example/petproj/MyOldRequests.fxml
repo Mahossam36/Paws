@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(from 0% 100% to 100% 0%, #f29fd4 20%, #fab9e1 80%);" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.petproj.MyOldRequests_Controller">
+    <children>
+        <Label fx:id="adoption_label" layoutX="213.0" layoutY="129.0" prefHeight="37.0" prefWidth="174.0" text="Adoption History" textOverrun="CLIP">
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font>
+        </Label>
+        <QuadCurve controlX="-20.33331298828125" controlY="-5.9999847412109375" endX="46.3333740234375" endY="-62.66667175292969" fill="#bbebff" layoutX="553.0" layoutY="211.0" startX="46.3333740234375" startY="30.000015258789062" stroke="#fbbfbf" strokeType="INSIDE" />
+        <QuadCurve controlX="32.33332824707031" controlY="-32.0" endX="-77.00001525878906" endY="31.999969482421875" fill="#bbebff" layoutX="77.0" layoutY="368.0" startX="-88.33332824707031" startY="-110.66668701171875" stroke="#dbbaba" strokeType="INSIDE" />
+        <Button fx:id="backbutton" layoutX="86.0" layoutY="166.0" mnemonicParsing="false" onAction="#Back2" style="-fx-background-color: white;" text="Back">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+        </Button>
+        <Button fx:id="viewdetailsbutton" layoutX="380.0" layoutY="214.0" mnemonicParsing="false" onAction="#Details" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: white;" text="View Details" textAlignment="CENTER">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+        </Button>
+        <TextField fx:id="Age_text" editable="false" layoutX="271.0" layoutY="262.0" prefHeight="30.0" prefWidth="127.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+        <TextField fx:id="Date_text" editable="false" layoutX="160.0" layoutY="315.0" prefHeight="30.0" prefWidth="127.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+        <TextField fx:id="Status_text" editable="false" layoutX="356.0" layoutY="316.0" prefHeight="30.0" prefWidth="127.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+        <TextField fx:id="Breed_text" editable="false" layoutX="86.0" layoutY="262.0" prefHeight="30.0" prefWidth="127.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+        <Label fx:id="age_label" layoutX="236.0" layoutY="267.0" text="Age">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+        <Label fx:id="date_label" layoutX="120.0" layoutY="321.0" text="Date">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+        <Label fx:id="status_label" layoutX="307.0" layoutY="321.0" text="Status">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+        <Label fx:id="breed_label" layoutX="37.0" layoutY="267.0" prefHeight="20.0" prefWidth="42.0" text="Breed">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+        <ComboBox fx:id="pets_box" layoutX="86.0" layoutY="216.0" prefHeight="26.0" prefWidth="138.0" promptText="Select Pet" style="-fx-background-color: white;">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color opacity="0.20000000298023224" />
+               </color>
+            </InnerShadow>
+         </effect>
+        </ComboBox>
+      <ImageView fitHeight="182.0" fitWidth="174.0" layoutX="450.0" layoutY="277.0">
+         <image>
+            <Image url="@../../../images/spycat.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="168.0" fitWidth="138.0" layoutX="-22.0" layoutY="286.0" nodeOrientation="RIGHT_TO_LEFT">
+         <image>
+            <Image url="@../../../images/puppy.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="123.0" prefWidth="600.0" style="-fx-background-color: white;" />
+      <ImageView fitHeight="143.0" fitWidth="600.0" layoutY="-9.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../images/shelter'slogoimage.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

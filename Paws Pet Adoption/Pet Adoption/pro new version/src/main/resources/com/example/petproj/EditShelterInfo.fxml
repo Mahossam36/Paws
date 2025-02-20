@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(from 0% 100% to 100% 0%, #f29fd4 20%, #fab9e1 80%);" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.petproj.EditShelterInfo">
+   <children>
+      <Ellipse fill="#00096b" layoutX="-9.0" layoutY="407.0" radiusX="100.0" radiusY="80.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Text layoutX="17.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Editing shelter's info">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="Email" layoutX="289.0" layoutY="238.0" text="Email" textFill="#00096b">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="Name" layoutX="287.0" layoutY="166.0" text="Name" textFill="#00096b">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailField" layoutX="223.0" layoutY="267.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: white;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField fx:id="locationField" layoutX="32.0" layoutY="267.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: white;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField fx:id="phoneField" layoutX="411.0" layoutY="267.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: white;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Button fx:id="back" layoutX="17.0" layoutY="376.0" mnemonicParsing="false" onAction="#Back" style="-fx-background-color: white;" text="Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="update" alignment="CENTER" cancelButton="true" contentDisplay="CENTER" defaultButton="true" layoutX="134.0" layoutY="376.0" onAction="#handleUpdate" prefHeight="30.0" prefWidth="362.0" style="-fx-background-color: white;" text="Update" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color opacity="0.507614254951477" />
+               </color>
+            </InnerShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="108.0" layoutY="194.0" />
+      <TextField fx:id="shelterNameField" editable="false" layoutX="223.0" layoutY="199.0" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: white; -fx-border-color: #00096b; -fx-border-width: 2px 2px 2px 2px;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Label fx:id="Location" layoutX="86.0" layoutY="238.0" text="Location" textFill="#00096b">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="phonenumber" layoutX="469.0" layoutY="238.0" prefHeight="27.0" prefWidth="55.0" text="Phone" textFill="#00096b">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="79.0" fitWidth="174.0" layoutX="411.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/cat3.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="123.0" prefWidth="600.0" style="-fx-background-color: white;" />
+      <ImageView fitHeight="143.0" fitWidth="600.0" layoutY="-9.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../images/shelter'slogoimage.png" />
+         </image>
+      </ImageView>
+      <Ellipse fill="#00096b" layoutX="600.0" layoutY="147.0" radiusX="44.0" radiusY="28.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(from 0% 100% to 100% 0%, #89caff 20%, #bbebff 80%);" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.petproj.EditAccController">
+   <children>
+      <TextField fx:id="nameField" layoutX="36.0" layoutY="188.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="36.0" layoutY="167.0" prefHeight="17.0" prefWidth="54.0" text="Name">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="269.0" layoutY="167.0" prefHeight="18.0" prefWidth="65.0" text="Password">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="224.0" prefHeight="18.0" prefWidth="65.0" text="Email">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="283.0" prefHeight="18.0" prefWidth="108.0" text="Phone Number">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="emailField" layoutX="36.0" layoutY="242.0" prefHeight="25.0" prefWidth="403.0">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+      <TextField fx:id="phoneNumField" layoutX="37.0" layoutY="301.0" prefHeight="25.0" prefWidth="181.0" />
+      <Button fx:id="confirmChangesBtn" alignment="CENTER" cancelButton="true" contentDisplay="CENTER" defaultButton="true" layoutX="201.0" layoutY="350.0" onAction="#confirmChangeHandle" prefHeight="29.0" prefWidth="200.0" style="-fx-background-color: white;" text="Confirm Change" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow>
+               <color>
+                  <Color opacity="0.20000000298023224" />
+               </color>
+            </InnerShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="backBtn" layoutX="36.0" layoutY="136.0" mnemonicParsing="false" onAction="#Back" text="Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <PasswordField fx:id="passField" layoutX="269.0" layoutY="188.0" />
+      <ImageView fitHeight="216.0" fitWidth="216.0" layoutX="395.0" layoutY="244.0" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/catdog1.png" />
+         </image>
+      </ImageView>
+      <Ellipse fill="#00096b" layoutX="14.0" layoutY="385.0" radiusX="60.0" radiusY="44.0" smooth="false" stroke="BLACK" strokeType="INSIDE" />
+      <AnchorPane prefHeight="123.0" prefWidth="600.0" style="-fx-background-color: white;" />
+      <ImageView fitHeight="143.0" fitWidth="600.0" layoutY="-9.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../images/shelter'slogoimage.png" />
+         </image>
+      </ImageView>
+      <Ellipse fill="#00096b" layoutX="594.0" layoutY="162.0" radiusX="60.0" radiusY="44.0" smooth="false" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>

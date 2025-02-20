@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(from 0% 100% to 100% 0%, #f29fd4 20%, #fab9e1 80%);" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.petproj.PetRequest_Adopter_Controller">
+    <children>
+        <Ellipse fill="#bbebff" layoutX="479.0" layoutY="399.0" radiusX="169.0" radiusY="147.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+        <Ellipse fill="#bbebff" layoutX="21.0" layoutY="399.0" radiusX="100.0" radiusY="80.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+        <Text layoutX="243.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Send Request" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="21.0" />
+            </font>
+        </Text>
+        <Button fx:id="submit" alignment="CENTER" cancelButton="true" contentDisplay="CENTER" defaultButton="true" layoutX="51.0" layoutY="362.0" onAction="#submit" prefHeight="30.0" prefWidth="118.0" style="-fx-background-color: white;" text="Submit" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <DropShadow />
+            </effect></Button>
+        <ImageView fx:id="imageView" fitHeight="303.0" fitWidth="174.0" layoutX="430.0" layoutY="134.0" pickOnBounds="true">
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </ImageView>
+        <ComboBox fx:id="comboBox" layoutX="174.0" layoutY="203.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="118.0" promptText="Select Pet" style="-fx-background-color: white;">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+            <effect>
+                <InnerShadow>
+                    <color>
+                        <Color opacity="0.20000000298023224" />
+                    </color>
+                </InnerShadow>
+            </effect></ComboBox>
+        <ComboBox fx:id="Available_Pets_Box" layoutX="316.0" layoutY="203.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="118.0" promptText="Select Name" style="-fx-background-color: white;">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+            <effect>
+                <InnerShadow>
+                    <color>
+                        <Color opacity="0.20000000298023224" />
+                    </color>
+                </InnerShadow>
+            </effect>
+        </ComboBox>
+        <Label fx:id="Age" layoutX="337.0" layoutY="303.0" text="Age" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="Breed" layoutX="200.0" layoutY="277.0" text="Breed" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="Pet_Age" editable="false" layoutX="291.0" layoutY="325.0" prefHeight="30.0" prefWidth="118.0">
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+            <font>
+                <Font size="14.0" />
+            </font>
+            <effect>
+                <Bloom threshold="1.0" />
+            </effect></TextField>
+        <TextField fx:id="Pet_Breed" editable="false" layoutX="162.0" layoutY="298.0" prefHeight="30.0" prefWidth="118.0">
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+            <font>
+                <Font size="14.0" />
+            </font>
+            <effect>
+                <Bloom threshold="1.0" />
+            </effect></TextField>
+        <ComboBox fx:id="Available_Shelter_Box" layoutX="26.0" layoutY="203.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="118.0" promptText="Select shelter" style="-fx-background-color: white;">
+            <cursor>
+                <Cursor fx:constant="OPEN_HAND" />
+            </cursor>
+            <effect>
+                <InnerShadow>
+                    <color>
+                        <Color opacity="0.20000000298023224" />
+                    </color>
+                </InnerShadow>
+            </effect></ComboBox>
+        <Button fx:id="back" alignment="CENTER" layoutX="26.0" layoutY="149.0" mnemonicParsing="false" onAction="#Back" style="-fx-background-color: white;" text="Back" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <DropShadow />
+            </effect></Button>
+        <Label fx:id="Health_Status" layoutX="44.0" layoutY="252.0" text="Health Status" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="Pet_Health" editable="false" layoutX="30.0" layoutY="272.0" prefHeight="30.0" prefWidth="118.0">
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+            <font>
+                <Font size="14.0" />
+            </font>
+            <effect>
+                <Bloom threshold="1.0" />
+            </effect>
+        </TextField>
+      <AnchorPane prefHeight="123.0" prefWidth="600.0" style="-fx-background-color: white;" />
+      <ImageView fitHeight="143.0" fitWidth="600.0" layoutY="-9.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../images/shelter'slogoimage.png" />
+         </image>
+      </ImageView>
+        <Ellipse fill="#bbebff" layoutX="600.0" layoutY="147.0" radiusX="44.0" radiusY="28.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+    </children>
+</AnchorPane>
